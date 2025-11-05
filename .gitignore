@@ -1,2 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
 venv/
-.venv/__pycache__/
+env/
+
+# Data and models
+*.csv
+*.pkl
+*.h5
+*.joblib
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# FastAPI logs
+*.log
