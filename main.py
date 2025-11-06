@@ -72,6 +72,11 @@ async def form():
             </style>
         </head>
         <body>
+      
+        <div class=\"container\">
+        <img src=\"/static/hero.jpeg\" alt=\"hero\" style=\"width:100%; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.1); margin-bottom:20px;\" />
+        </div>
+
             <div class=\"container\">
                 <h2>🏠 Flat Price Predictor</h2>
                 <p class=\"subtitle\">Get instant price estimates based on area</p>
@@ -84,7 +89,7 @@ async def form():
                 <div class=\"info\">
                     <div class=\"info-item\">📏 Valid range: {int(min_area):,} - {int(max_area):,} sqft</div>
                     <div class=\"info-item\">📊 Model accuracy (R²): {r2_score:.2%}</div>
-                    <div class=\"info-item\">🏠 Dataset size: {dataset_size:,} properties</div>
+                    
                     <div class=\"info-item\">💰 Avg price/sqft: ₹{mean_price_per_sqft:,.0f}</div>
                 </div>
             </div>
